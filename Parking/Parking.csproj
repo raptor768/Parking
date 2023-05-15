@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MainProgect\DataBase.csproj" />
     <ProjectReference Include="..\ParkingLibrary\ParkingLibrary.csproj" />
   </ItemGroup>
 

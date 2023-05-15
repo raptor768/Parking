@@ -37,7 +37,7 @@ namespace DataBase
                 command.ExecuteNonQuery();
                 command = new SQLiteCommand(connection)
                 {
-                    CommandText = "CREATE TABLE IF NOT EXISTS [Transport]([id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, [mark] TEXT);"
+                    CommandText = "CREATE TABLE IF NOT EXISTS [Transport]([id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, [mark] TEXT, [model] TEXT, [sertificate] TEXT, [year] TEXT, [color] TEXT, [number] TEXT);"
                 };
                 command.ExecuteNonQuery();
             }
@@ -52,11 +52,11 @@ namespace DataBase
             }
         }
         //Добавление нового транспорта
-        public static void Add(string mark)
+        public static void Add(string mark, string model, string sertificate, string year, string color, string number)
         {
             if (Connect())
             {
-                command.CommandText = $"INSERT INTO Transport (mark) VALUES (\"{mark}\")";
+                command.CommandText = $"INSERT INTO Transport (mark, model) VALUES (\"{mark}\",\"{model}\",\"{sertificate}\",\"{year}\",\"{color}\",\"{number}\")";
                 command.ExecuteNonQuery();
             }
         }
@@ -100,7 +100,7 @@ namespace DataBase
                     if (tableName == "Client")
                         Console.WriteLine($"ID: {reader.GetValue(0)}\nФИО: {reader.GetValue(1)}\nПаспорт: {reader.GetValue(2)}");
                     if (tableName == "Transport")
-                        Console.WriteLine($"ID: {reader.GetValue(0)}\nМарка ТС: {reader.GetValue(1)}");
+                        Console.WriteLine($"ID: {reader.GetValue(0)}\nМарка ТС: {reader.GetValue(1)}\nМодель: {reader.GetValue(2)}");
                     Console.WriteLine("================================================");
                 }
                 reader.Close();

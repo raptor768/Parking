@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking", "Parking\Parking.csproj", "{5AD217E0-D2F4-4D1B-A513-6FC1013FA6E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking", "Parking\Parking.csproj", "{5AD217E0-D2F4-4D1B-A513-6FC1013FA6E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLibrary", "ParkingLibrary\ParkingLibrary.csproj", "{061DB9EE-65C8-4B1A-9133-70D5A6A48F9B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "MainProgect\DataBase.csproj", "{6D27328D-F08D-4CAF-81D3-87CDA1114410}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingLibrary", "ParkingLibrary\ParkingLibrary.csproj", "{061DB9EE-65C8-4B1A-9133-70D5A6A48F9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{061DB9EE-65C8-4B1A-9133-70D5A6A48F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061DB9EE-65C8-4B1A-9133-70D5A6A48F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061DB9EE-65C8-4B1A-9133-70D5A6A48F9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D27328D-F08D-4CAF-81D3-87CDA1114410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D27328D-F08D-4CAF-81D3-87CDA1114410}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D27328D-F08D-4CAF-81D3-87CDA1114410}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D27328D-F08D-4CAF-81D3-87CDA1114410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
