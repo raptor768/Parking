@@ -1,5 +1,6 @@
 ﻿using System.Data.SQLite;
 using static System.Net.Mime.MediaTypeNames;
+using ParkingLibrary.Data;
 
 namespace DataBase
 {
@@ -52,11 +53,11 @@ namespace DataBase
             }
         }
         //Добавление нового транспорта
-        public static void Add(string mark, string model, string sertificate, string year, string color, string number)
+        internal static void Add (Car car) 
         {
             if (Connect())
             {
-                command.CommandText = $"INSERT INTO Transport (mark, model) VALUES (\"{mark}\",\"{model}\",\"{sertificate}\",\"{year}\",\"{color}\",\"{number}\")";
+                command.CommandText = $"INSERT INTO Transport (mark, model, sertificate, year, color, number) VALUES (\"{car.mark}\",\"{car.model}\",\"{car.sertificate}\",\"{car.year}\",\"{car.color}\",\"{car.number}\")";
                 command.ExecuteNonQuery();
             }
         }

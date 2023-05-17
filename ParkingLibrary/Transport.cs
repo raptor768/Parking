@@ -9,6 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using ParkingLibrary.Data;
 
 namespace ParkingLibrary
 {
@@ -64,7 +65,11 @@ namespace ParkingLibrary
                     number = Console.ReadLine();
                     continue;
                 }
-            }         
+                break;
+            }
+            Car car = new Car(mark, model, sertificate, year, color, number);
+            Console.WriteLine("Клиент добавлен в базу данных\n");
+            SqlDb.Add(car);
         }
     }
 }

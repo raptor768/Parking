@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ParkingLibrary.Новая_папка
+namespace ParkingLibrary.Data.model
 {
     internal class Car
     {
@@ -16,14 +16,14 @@ namespace ParkingLibrary.Новая_папка
         internal string color { get; private set; } = "";
         internal string number { get; private set; } = "";
 
-        public Car(string mark, string model, string sertificate, string year, string color, string number)
+        internal Car(string mark, string model, string sertificate, string year, string color, string number)
         {
             this.mark = mark;
             this.model = model;
-            this.sertificate = sertificate; 
+            this.sertificate = sertificate;
             this.year = year;
             this.color = color;
-            this.number = number;   
+            this.number = number;
         }
     }
 }
